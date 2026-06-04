@@ -3,25 +3,202 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BarberCitas — Legal y soporte</title>
-  <meta http-equiv="refresh" content="0; url=support.html" />
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 720px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-    }
-    a { font-weight: 600; }
-  </style>
+  <title>BarberCitas — Agenda y clientes para barberías</title>
+  <meta name="description" content="BarberCitas: gestiona citas, clientes, ingresos e inventario desde tu iPhone. Diseñada para barberos y peluquerías. Funciona sin conexión." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>BarberCitas</h1>
-  <p>Agenda y clientes para barberías y peluquerías.</p>
-  <ul>
-    <li><a href="support.html">Soporte</a></li>
-    <li><a href="privacy-policy.html">Política de privacidad</a></li>
-  </ul>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">✂️</span>
+        <span class="brand-text">
+          BarberCitas
+          <span>Agenda y clientes</span>
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#premium">Premium</a>
+        <a href="support.html">Soporte</a>
+        <a href="privacy-policy.html">Privacidad</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">✨ Hecha para barberos y peluquerías</div>
+      <div class="hero-logo" aria-hidden="true">✂️</div>
+      <h1>Tu barbería, <em>organizada</em></h1>
+      <p class="hero-sub">
+        Citas, clientes, ingresos e inventario en una sola app.
+        Interfaz elegante, datos en tu iPhone y sin depender de internet.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#descargar">📱 Disponible en App Store</a>
+        <a class="btn btn-outline" href="support.html">📩 Contactar soporte</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="funciones">
+    <div class="section-header">
+      <span class="section-label">Funciones</span>
+      <h2>Todo lo que tu negocio necesita</h2>
+      <p>Gestión completa desde el mostrador, sin complicaciones.</p>
+    </div>
+    <div class="features-grid">
+      <article class="feature-card">
+        <span class="feature-icon">📅</span>
+        <h3>Agenda de citas</h3>
+        <p>Crea, edita y organiza citas por fecha y hora. Recordatorios automáticos 30 min antes y al inicio.</p>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon">👥</span>
+        <h3>Clientes</h3>
+        <p>Historial de visitas, notas y llamada rápida. Conoce a tus clientes frecuentes de un vistazo.</p>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon">💰</span>
+        <h3>Control de ingresos</h3>
+        <p>Estadísticas de hoy, semana y mes. Visualiza cómo va tu negocio al instante.</p>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon">📄</span>
+        <h3>Reportes PDF</h3>
+        <p>Exporta ingresos por día, semana o rango personalizado para tu contabilidad.</p>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon">🛍️</span>
+        <h3>Inventario</h3>
+        <p>Productos, servicios personalizados y ventas en mostrador en un solo lugar.</p>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon">💾</span>
+        <h3>Offline y backup</h3>
+        <p>Funciona sin conexión. Exporta e importa backup para cambiar de iPhone con tranquilidad.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="section-header">
+      <span class="section-label">Cómo funciona</span>
+      <h2>Lista en minutos</h2>
+    </div>
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Configura tu negocio</h3>
+        <p>Nombre, horarios y servicios principales en un onboarding rápido.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Agenda citas</h3>
+        <p>Registra clientes nuevos o existentes y mantén tu día bajo control.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Crece sin límites</h3>
+        <p>Usa el plan gratuito o desbloquea Premium cuando lo necesites.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="premium">
+    <div class="section-header">
+      <span class="section-label">BarberCitas Premium</span>
+      <h2>Sin límites para tu barbería</h2>
+      <p>Empieza gratis. Actualiza cuando quieras más capacidad.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Mensual</h3>
+        <div class="price-amount">$5.99</div>
+        <div class="price-period">/ mes</div>
+        <p class="price-detail">Facturación mensual flexible</p>
+      </div>
+      <div class="price-card">
+        <h3>Trimestral</h3>
+        <div class="price-amount">$14.99</div>
+        <div class="price-period">/ 3 meses</div>
+        <p class="price-detail">Equivale a $5/mes</p>
+      </div>
+      <div class="price-card featured">
+        <span class="price-badge">Más popular</span>
+        <h3>Anual</h3>
+        <div class="price-amount">$49.99</div>
+        <div class="price-period">/ año</div>
+        <p class="price-detail">Equivale a $4.17/mes · Ahorra 30%</p>
+        <p class="price-trial">✓ 3 días gratis</p>
+      </div>
+    </div>
+    <div class="info-box" style="margin-top: 32px;">
+      <h3>✨ Premium incluye</h3>
+      <ul>
+        <li>Citas y clientes ilimitados</li>
+        <li>Reportes PDF sin restricciones</li>
+        <li>Inventario y servicios completos</li>
+        <li>Soporte prioritario</li>
+      </ul>
+    </div>
+    <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 16px;">
+      Plan gratuito: 30 citas activas · 20 clientes · 5 exportaciones PDF
+    </p>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="section-header">
+      <span class="section-label">Preguntas frecuentes</span>
+      <h2>FAQ</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>¿Necesito internet para usar BarberCitas?</h3>
+        <p>No. Las funciones principales funcionan sin conexión. Tus datos se guardan en tu iPhone.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Mis datos están en la nube?</h3>
+        <p>No. BarberCitas no usa servidores propios. Tú controlas tus datos y puedes exportar un backup cuando quieras.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Cómo cancelo Premium?</h3>
+        <p>En tu iPhone: Ajustes → [tu nombre] → Suscripciones. Apple gestiona el pago y la cancelación.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" id="descargar">
+    <h2>Descarga BarberCitas</h2>
+    <p>Disponible para iPhone en la App Store.</p>
+    <div class="app-store-badge">
+      <span style="font-size: 1.8rem;">🍎</span>
+      <span>
+        <strong>BarberCitas – Agenda y clientes</strong>
+        Próximamente en App Store
+      </span>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">✂️ BarberCitas</div>
+      <p class="footer-tagline">Agenda y clientes para barberías y peluquerías</p>
+      <nav class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="support.html">Soporte</a>
+        <a href="privacy-policy.html">Política de privacidad</a>
+        <a href="mailto:Apper2025@icloud.com">Apper2025@icloud.com</a>
+      </nav>
+      <p class="footer-copy">
+        © 2026 Apper · Bundle ID: com.henryapper.barbercitas · Versión 1.0.0
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>

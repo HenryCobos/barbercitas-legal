@@ -4,72 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Soporte — BarberCitas</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 24px 20px 48px;
-      color: #1a1a1a;
-      background: #fff;
-    }
-    @media (prefers-color-scheme: dark) {
-      body { color: #e8e8e8; background: #111; }
-      a { color: #7eb6ff; }
-      .card { background: #1c1c1c; border-color: #333; }
-    }
-    h1 { font-size: 1.75rem; }
-    .card {
-      background: #f5f5f5;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 16px 20px;
-      margin: 16px 0;
-    }
-    .card a { font-weight: 600; word-break: break-all; }
-    ul { padding-left: 1.25rem; }
-  </style>
+  <meta name="description" content="Soporte técnico de BarberCitas. Contacto por correo y WhatsApp para ayuda con la app, Premium y privacidad." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <h1>Soporte — BarberCitas</h1>
-  <p>
-    <strong>BarberCitas – Agenda y clientes</strong><br />
-    Ayuda con la app, tu plan Premium, copias de seguridad o privacidad.
-  </p>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">✂️</span>
+        <span class="brand-text">
+          BarberCitas
+          <span>Agenda y clientes</span>
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#funciones">Funciones</a>
+        <a href="index.html#premium">Premium</a>
+        <a href="support.html" class="active">Soporte</a>
+        <a href="privacy-policy.html">Privacidad</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="card">
-    <p><strong>Correo electrónico</strong></p>
-    <p><a href="mailto:Apper2025@icloud.com?subject=BarberCitas%20%E2%80%93%20Soporte">Apper2025@icloud.com</a></p>
-    <p>Ideal para consultas detalladas, suscripciones o solicitudes de privacidad.</p>
+  <section class="page-hero">
+    <div class="page-hero-icon">📩</div>
+    <h1>Soporte</h1>
+    <p>Ayuda con la app, tu plan Premium, copias de seguridad o privacidad. Respondemos en 1–3 días hábiles.</p>
+  </section>
+
+  <div class="contact-grid">
+    <a class="contact-card" href="mailto:Apper2025@icloud.com?subject=BarberCitas%20%E2%80%93%20Soporte">
+      <div class="contact-card-icon">✉️</div>
+      <div>
+        <h3>Correo electrónico</h3>
+        <div class="value">Apper2025@icloud.com</div>
+        <p>Ideal para consultas detalladas, suscripciones o solicitudes de privacidad.</p>
+      </div>
+    </a>
+    <a class="contact-card" href="https://wa.me/51994277540?text=Hola%2C%20necesito%20ayuda%20con%20BarberCitas." rel="noopener noreferrer">
+      <div class="contact-card-icon">💬</div>
+      <div>
+        <h3>WhatsApp</h3>
+        <div class="value">+51 994 277 540</div>
+        <p>Atención en horario laboral (Perú). Toca para escribirnos.</p>
+      </div>
+    </a>
   </div>
 
-  <div class="card">
-    <p><strong>WhatsApp</strong></p>
-    <p><a href="https://wa.me/51994277540?text=Hola%2C%20necesito%20ayuda%20con%20BarberCitas." rel="noopener noreferrer">+51 994 277 540</a></p>
-    <p>Atención en horario laboral (Perú).</p>
+  <div class="info-box">
+    <h3>✨ Suscripciones Premium</h3>
+    <ul>
+      <li>Los pagos los gestiona <strong style="color: var(--text);">Apple</strong> a través de la App Store.</li>
+      <li>Para cancelar: <strong style="color: var(--text);">Ajustes → [tu nombre] → Suscripciones</strong> en tu iPhone.</li>
+      <li>Para otras dudas sobre Premium, escríbenos por correo o WhatsApp.</li>
+    </ul>
   </div>
 
-  <h2>Tiempo de respuesta</h2>
-  <p>Respondemos en <strong>1–3 días hábiles</strong>.</p>
+  <section class="section" style="padding-top: 24px;">
+    <div class="section-header">
+      <span class="section-label">Ayuda rápida</span>
+      <h2>Preguntas comunes</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>¿Cómo restauro mi backup?</h3>
+        <p>En la app ve a Más → Backup local → Importar. Selecciona el archivo JSON que exportaste antes.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Por qué no recibo recordatorios?</h3>
+        <p>Activa notificaciones para BarberCitas en Ajustes del iPhone. La cita debe estar programada o confirmada y en el futuro.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Dónde está mi información?</h3>
+        <p>Todo se guarda en tu iPhone. No tenemos servidores ni acceso remoto a tus datos de negocio.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Suscripciones Premium</h2>
-  <ul>
-    <li>Los pagos los gestiona <strong>Apple</strong> a través de la App Store.</li>
-    <li>Para cancelar: <strong>Ajustes → [tu nombre] → Suscripciones</strong> en tu iPhone.</li>
-    <li>Para otras dudas sobre Premium, escríbenos por correo o WhatsApp.</li>
-  </ul>
+  <section class="cta-band">
+    <h2>¿Aún no tienes la app?</h2>
+    <p>Conoce todas las funciones de BarberCitas.</p>
+    <a class="btn btn-primary" href="index.html">Ver BarberCitas</a>
+  </section>
 
-  <h2>Privacidad</h2>
-  <p>
-    <a href="privacy-policy.html">Política de privacidad de BarberCitas</a>
-  </p>
-
-  <p style="margin-top: 2rem; font-size: 0.9rem; color: #666;">
-    Bundle ID: com.henryapper.barbercitas · Versión 1.0.0
-  </p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">✂️ BarberCitas</div>
+      <p class="footer-tagline">Agenda y clientes para barberías y peluquerías</p>
+      <nav class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="support.html">Soporte</a>
+        <a href="privacy-policy.html">Política de privacidad</a>
+      </nav>
+      <p class="footer-copy">
+        © 2026 Apper · com.henryapper.barbercitas · v1.0.0
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>
