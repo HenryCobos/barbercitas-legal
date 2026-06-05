@@ -764,6 +764,162 @@ img {
   color: var(--gold);
 }
 
+/* —— Privacy summary (App Store alignment) —— */
+.privacy-summary {
+  margin: 28px 0 32px;
+}
+
+.privacy-summary h2 {
+  margin-top: 0 !important;
+  font-size: 1.05rem;
+}
+
+.privacy-table-wrap {
+  overflow-x: auto;
+  margin: 16px 0;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.privacy-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  min-width: 520px;
+}
+
+.privacy-table th,
+.privacy-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.privacy-table th {
+  background: var(--surface-2);
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.privacy-table tr:last-child td {
+  border-bottom: none;
+}
+
+.privacy-table td {
+  color: var(--text-secondary);
+}
+
+.privacy-table .tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+  margin: 2px 4px 2px 0;
+  white-space: nowrap;
+}
+
+.privacy-table .tag-yes {
+  background: rgba(76, 175, 80, 0.15);
+  color: var(--success);
+  border: 1px solid rgba(76, 175, 80, 0.35);
+}
+
+.privacy-table .tag-no {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.privacy-table .tag-local {
+  background: rgba(255, 215, 0, 0.1);
+  color: var(--gold);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.privacy-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 20px 0 8px;
+}
+
+.privacy-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+}
+
+.privacy-card strong {
+  display: block;
+  color: var(--text);
+  font-size: 0.88rem;
+  margin-bottom: 6px;
+}
+
+.privacy-card p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.legal-toc {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+  margin-bottom: 28px;
+}
+
+.legal-toc h2 {
+  margin: 0 0 12px !important;
+  padding-top: 0 !important;
+  font-size: 0.95rem !important;
+  color: var(--text) !important;
+}
+
+.legal-toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  columns: 2;
+  column-gap: 24px;
+}
+
+.legal-toc li {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  break-inside: avoid;
+}
+
+.legal-toc a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.legal-toc a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.legal-callout {
+  background: var(--surface-2);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.legal-callout strong {
+  color: var(--gold);
+}
+
 /* —— CTA band —— */
 .cta-band {
   background: linear-gradient(135deg, #1a1500 0%, var(--surface) 50%, #0a0a0a 100%);
@@ -866,5 +1022,9 @@ img {
 
   .support-highlights {
     margin-top: 0;
+  }
+
+  .legal-toc ol {
+    columns: 1;
   }
 }
